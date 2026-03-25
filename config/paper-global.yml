@@ -13,7 +13,7 @@
 # Discord: https://discord.gg/papermc
 # Website: https://papermc.io/
 
-_version: 30
+_version: 31
 anticheat:
   obfuscation:
     items:
@@ -37,7 +37,6 @@ chunk-loading-basic:
   player-max-chunk-load-rate: 300.0
   player-max-chunk-send-rate: 200.0
 chunk-system:
-  gen-parallelism: aggressive
   io-threads: 4
   worker-threads: 8
 collisions:
@@ -79,6 +78,8 @@ misc:
     chat-executor-max-size: 16
   client-interaction-leniency-distance: 0.0
   compression-level: 3
+  enable-nether: true
+  fix-far-end-terrain-generation: true
   load-permissions-yml-before-plugins: true
   max-joins-per-tick: 20
   prevent-negative-villager-demand: true
@@ -128,10 +129,14 @@ unsupported-settings:
   allow-piston-duplication: false
   allow-unsafe-end-portal-teleportation: false
   compression-format: ZLIB
+  oversized-item-component-sanitizer:
+    dont-sanitize: []
   perform-username-validation: true
   skip-tripwire-hook-placement-validation: false
   skip-vanilla-damage-tick-when-shield-blocked: false
   update-equipment-on-player-actions: true
+update-checker:
+  enabled: true
 watchdog:
   early-warning-delay: 20000
   early-warning-every: 10000

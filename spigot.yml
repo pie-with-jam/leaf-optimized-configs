@@ -48,13 +48,13 @@ world-settings:
   default:
     below-zero-generation-in-existing-chunks: true
     ticks-per:
-      hopper-transfer: 24
-      hopper-check: 8
+      hopper-transfer: 8
+      hopper-check: 4
     hopper-amount: 1
     hopper-can-load-chunks: false
     merge-radius:
-      item: 4.5
-      exp: 6.0
+      item: 2.5
+      exp: 3.0
     hunger:
       jump-walk-exhaustion: 0.05
       jump-sprint-exhaustion: 0.2
@@ -65,22 +65,22 @@ world-settings:
       other-multiplier: 0.0
     simulation-distance: default
     view-distance: default
-    arrow-despawn-rate: 200
-    trident-despawn-rate: 200
+    arrow-despawn-rate: 300
+    trident-despawn-rate: 300
     growth:
-      cactus-modifier: 300
-      cane-modifier: 300
-      melon-modifier: 300
+      cactus-modifier: 100
+      cane-modifier: 100
+      melon-modifier: 100
       mushroom-modifier: 300
-      pumpkin-modifier: 300
-      sapling-modifier: 300
-      beetroot-modifier: 300
-      carrot-modifier: 300
-      potato-modifier: 300
-      torchflower-modifier: 300
-      wheat-modifier: 300
-      netherwart-modifier: 300
-      vine-modifier: 300
+      pumpkin-modifier: 100
+      sapling-modifier: 100
+      beetroot-modifier: 100
+      carrot-modifier: 100
+      potato-modifier: 100
+      torchflower-modifier: 100
+      wheat-modifier: 100
+      netherwart-modifier: 100
+      vine-modifier: 100
       cocoa-modifier: 300
       bamboo-modifier: 300
       sweetberry-modifier: 300
@@ -88,37 +88,37 @@ world-settings:
       twistingvines-modifier: 300
       weepingvines-modifier: 300
       cavevines-modifier: 300
-      glowberry-modifier: 300
-      pitcherplant-modifier: 300
+      glowberry-modifier: 100
+      pitcherplant-modifier: 100
     unload-frozen-chunks: true
-    thunder-chance: 500000
+    thunder-chance: 100000
     entity-tracking-range:
       players: 48
-      animals: 32
-      monsters: 32
-      misc: 28
+      animals: 16
+      monsters: 24
+      misc: 16
       display: 48
-      other: 24
+      other: 16
     entity-activation-range:
-      animals: 8
-      monsters: 8
-      raiders: 16
-      misc: 4
-      water: 6
-      villagers: 8
-      flying-monsters: 8
+      animals: 4
+      monsters: 4
+      raiders: 8
+      misc: 2
+      water: 4
+      villagers: 2
+      flying-monsters: 4
       wake-up-inactive:
         animals-max-per-tick: 1
-        animals-every: 4800
+        animals-every: 6000
         animals-for: 25
-        monsters-max-per-tick: 2
-        monsters-every: 1600
+        monsters-max-per-tick: 1
+        monsters-every: 2400
         monsters-for: 25
         villagers-max-per-tick: 1
-        villagers-every: 2400
+        villagers-every: 3600
         villagers-for: 25
-        flying-monsters-max-per-tick: 2
-        flying-monsters-every: 800
+        flying-monsters-max-per-tick: 1
+        flying-monsters-every: 1200
         flying-monsters-for: 25
       villagers-work-immunity-after: 400
       villagers-work-immunity-for: 80
@@ -147,7 +147,7 @@ world-settings:
     seed-mineshaft: default
     seed-stronghold: default
     nerf-spawner-mobs: false
-    item-despawn-rate: 2000
+    item-despawn-rate: 6000
     mob-spawn-range: 3
     enable-zombie-pigmen-portal-spawns: true
     zombie-aggressive-towards-villager: true

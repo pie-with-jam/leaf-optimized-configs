@@ -62,7 +62,7 @@ chunks:
     snowball: -1
   fixed-chunk-inhabited-time: -1
   flush-regions-on-save: false
-  max-auto-save-chunks-per-tick: 6
+  max-auto-save-chunks-per-tick: 4
   prevent-moving-into-unloaded-chunks: true
 collisions:
   allow-player-cramming-damage: false
@@ -102,7 +102,6 @@ entities:
       skeletons: false
       zombies: false
     nerf-pigmen-from-nether-portals: false
-    only-merge-items-horizontally: false
     only-merge-items-horizontally: true
     parrots-are-unaffected-by-player-movement: false
     phantoms-do-not-spawn-on-creative-players: true
@@ -142,7 +141,7 @@ entities:
       items:
         cobblestone: 300
     count-all-mobs-for-spawning: false
-    creative-arrow-despawn-rate: 20
+    creative-arrow-despawn-rate: '20'
     despawn-range-shape: ELLIPSOID
     despawn-ranges:
       ambient:
@@ -182,8 +181,9 @@ entities:
     - Motion
     - sleeping_pos
     iron-golems-can-spawn-in-air: false
+    max-arrow-despawn-invulnerability: 200
     monster-spawn-max-light-level: default
-    non-player-arrow-despawn-rate: 40
+    non-player-arrow-despawn-rate: '40'
     per-player-mob-spawns: true
     scan-for-legacy-ender-dragon: true
     skeleton-horse-thunder-spawn-chance: default
@@ -305,8 +305,7 @@ misc:
   disable-sprint-interruption-on-attack: false
   legacy-ender-pearl-behavior: false
   max-leash-distance: default
-  redstone-implementation: VANILLA
-  shield-blocking-delay: 5
+  redstone-implementation: ALTERNATE_CURRENT
   show-sign-click-command-failure-msgs-to-player: false
   update-pathfinding-on-block-update: false
 scoreboards:
